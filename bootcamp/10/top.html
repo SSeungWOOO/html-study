@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage with Clear Property</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      #head {
+        background-color: #f6f5ef;
+      }
+
+      #logo {
+        float: left;
+        margin: 20px 0 10px 20px;
+        border: solid 1px red; /* Consider removing the border for a cleaner look */
+      }
+
+      #top {
+        float: right;
+        margin: 30px 20px 0 0;
+        border: solid 1px red; /* Consider removing the border for a cleaner look */
+      }
+
+      #menu {
+        clear: both;
+        height: 40px;
+        background-color: #443e58;
+        color: white;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 20px;
+        border: solid 1px red; /* Consider removing the border for a cleaner look */
+      }
+
+      #menu li {
+        display: inline;
+      }
+
+      .item {
+        margin: 0 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="head">
+      <div id="logo">
+        <img src="img/logo.png" alt="Logo" />
+      </div>
+      <div id="top">로그인 | 회원가입 | 공지사항</div>
+    </div>
+
+    <ul id="menu">
+      <!-- Fixed the ID selector here -->
+      <li class="item">HTML</li>
+      <li>|</li>
+      <li class="item">CSS</li>
+      <li>|</li>
+      <li class="item">JavaScript</li>
+      <!-- Fixed casing for consistency -->
+      <li>|</li>
+      <li class="item">Python</li>
+      <li>|</li>
+      <li class="item">PHP</li>
+      <li>|</li>
+      <li class="item">Java</li>
+      <li>|</li>
+    </ul>
+  </body>
+</html>
